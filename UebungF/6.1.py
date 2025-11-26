@@ -1,4 +1,5 @@
 import math
+from math import sqrt
 
 class Point:
     def __init__(self, x=0.0, y=0.0):
@@ -50,8 +51,7 @@ class Circle:
         return self.__center.distance(p) <= self.__radius
 
     def intersect(self, c):
-        # Zwei Kreise schneiden sich, wenn
-        # Abstand der Mittelpunkte <= Summe der Radien
+        # Zwei Kreise schneiden sich, wenn Abstand der Mittelpunkte <= Summe der Radien
         center_dist = self.__center.distance(c.__center)
         return center_dist <= (self.__radius + c.__radius)
 

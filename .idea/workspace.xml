@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf556dda-68c0-4bfd-a8cb-a13ca8af9303" name="Changes" comment="" />
+    <list default="true" id="bf556dda-68c0-4bfd-a8cb-a13ca8af9303" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/AufgabenF/6.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungF/6.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AufgabenF/6.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungF/6.2.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3628Ar1HBFafwqmY2rZ4xYHogzs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,9 +38,17 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.3.2.executor": "Run",
+    "Python.5.1.executor": "Run",
+    "Python.6.1.executor": "Run",
+    "Python.6.2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "aufgaben",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -69,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1764193164457</updated>
       <workItem from="1764193165629" duration="146000" />
+      <workItem from="1764194268300" duration="2197000" />
     </task>
     <servers />
   </component>
@@ -76,6 +101,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/wise2526$3_2.coverage" NAME="3.2 Coverage Results" MODIFIED="1764193303419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wise2526$3_2.coverage" NAME="3.2 Coverage Results" MODIFIED="1764194539871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wise2526$5_1.coverage" NAME="5.1 Coverage Results" MODIFIED="1764196507344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungE" />
+    <SUITE FILE_PATH="coverage/wise2526$6_2.coverage" NAME="6.2 Coverage Results" MODIFIED="1764195026763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AufgabenF" />
+    <SUITE FILE_PATH="coverage/wise2526$6_1.coverage" NAME="6.1 Coverage Results" MODIFIED="1764196686807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungF" />
   </component>
 </project>
