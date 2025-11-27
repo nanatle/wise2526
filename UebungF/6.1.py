@@ -2,7 +2,7 @@ import math
 from math import sqrt
 
 class Point:
-    def __init__(self, x=0.0, y=0.0):
+    def __init__(self, x: float = 0, y: float= 0):
         # private Attribute
         self.__x = x
         self.__y = y
@@ -11,7 +11,7 @@ class Point:
         # Abstand zweier Punkte mit der Formel √((x2-x1)² + (y2-y1)²)
         dx = self.__x - p.__x
         dy = self.__y - p.__y
-        return math.sqrt(dx*dx + dy*dy)
+        return math.sqrt(dx * dx + dy * dy)
 
     def shift(self, x_val, y_val):
         # Punkt verschieben
@@ -24,7 +24,7 @@ class Point:
 
 
 class Circle:
-    def __init__(self, x=0.0, y=0.0, radius=1.0):
+    def __init__(self, x: float=0, y: float = 0, radius: float = 1):
         self.__center = Point(x, y)  # Mittelpunkt
         self.__radius = radius  # privater Radius
 
@@ -74,7 +74,7 @@ p2 = Point(5, 7)
 print("Punkt 2:", p2.show())
 
 # Abstand Punkt 1 – Punkt 2
-print("Abstand p1 -> p2:", p1.distance(p2))
+print("Abstand P1 -> P2:", p1.distance(p2))
 
 # Kreis 1 (Standardwerte)
 c1 = Circle()
