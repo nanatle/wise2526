@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf556dda-68c0-4bfd-a8cb-a13ca8af9303" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/6.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungG/7.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungG/7.2..py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/blatt7_2b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UebungF/6.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungF/6.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UebungF/6.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungF/6.2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,7 @@
     "Python.5.1.executor": "Run",
     "Python.6.1.executor": "Run",
     "Python.6.2.executor": "Run",
+    "Python.7.2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "aufgaben",
@@ -96,6 +101,8 @@
       <workItem from="1764193165629" duration="146000" />
       <workItem from="1764194268300" duration="2197000" />
       <workItem from="1764230589598" duration="3335000" />
+      <workItem from="1764808389271" duration="813000" />
+      <workItem from="1765392719398" duration="3840000" />
     </task>
     <servers />
   </component>
@@ -103,9 +110,10 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/wise2526$3_2.coverage" NAME="3.2 Coverage Results" MODIFIED="1764231256412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wise2526$3_2.coverage" NAME="3.2 Coverage Results" MODIFIED="1765392956794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wise2526$5_1.coverage" NAME="5.1 Coverage Results" MODIFIED="1764196507344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungE" />
-    <SUITE FILE_PATH="coverage/wise2526$6_2.coverage" NAME="6.2 Coverage Results" MODIFIED="1764195026763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AufgabenF" />
+    <SUITE FILE_PATH="coverage/wise2526$7_2.coverage" NAME="7.2 Coverage Results" MODIFIED="1765402725437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
     <SUITE FILE_PATH="coverage/wise2526$6_1.coverage" NAME="6.1 Coverage Results" MODIFIED="1764231261099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungF" />
+    <SUITE FILE_PATH="coverage/wise2526$6_2.coverage" NAME="6.2 Coverage Results" MODIFIED="1765392962550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungF" />
   </component>
 </project>

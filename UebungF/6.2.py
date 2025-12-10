@@ -53,7 +53,3 @@ def kontaktbuch_menu():
             break
         else:
             print("Ungültige Eingabe!\n")
-
-
-
-

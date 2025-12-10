@@ -8,7 +8,7 @@ class Point:
         self.__y = y
 
     def distance(self, p):
-        # Abstand zweier Punkte mit der Formel √((x2-x1)² + (y2-y1)²)
+        # Abstand zweier Punkte
         dx = self.__x - p.__x
         dy = self.__y - p.__y
         return math.sqrt(dx * dx + dy * dy)
