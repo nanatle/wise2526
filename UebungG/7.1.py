@@ -26,6 +26,6 @@ def sort(liste):
 
 sortlaender = sort(laender)
 
-with open ("FunWithFlags.txt", "w") as fout:
+with open ("FunWithFlagsSorted.txt", "w") as fout:
     for land in sortlaender:
-        fout.write(f"{land.name},{land.bev},{land.farbe}")
+        fout.write(f"{land.name},{land.bev},{land.farbe} \n")

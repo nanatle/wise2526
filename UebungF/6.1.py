@@ -1,102 +1,84 @@
 import math
-from math import sqrt
 
-class Point:
-    def __init__(self, x: float = 0, y: float= 0):
-        # private Attribute
-        self.__x = x
-        self.__y = y
+class Punkt:
+    def __init__(self, x: float = 0, y: float = 0):
+        self._x = x
+        self._y = y
 
-    def distance(self, p):
-        # Abstand zweier Punkte
-        dx = self.__x - p.__x
-        dy = self.__y - p.__y
-        return math.sqrt(dx * dx + dy * dy)
+    def distance(self, punkt):
+        dx = punkt._x - self._x
+        dy = punkt._y - self._y
+        return (dx**2 + dy**2)**0.5
 
     def shift(self, x_val, y_val):
-        # Punkt verschieben
-        self.__x += x_val
-        self.__y += y_val
+        self._x += x_val
+        self._y += y_val
 
     def show(self):
-        # Koordinaten anzeigen
-        return f"Point({self.__x}, {self.__y})"
+        return f"Punkt({self._x}, {self._y})"
 
 
 class Circle:
-    def __init__(self, x: float=0, y: float = 0, radius: float = 1):
-        self.__center = Point(x, y)  # Mittelpunkt
-        self.__radius = radius  # privater Radius
-
-    def distance(self, obj):
-        # Abstand von Kreis zum Punkt
-        if isinstance(obj, Point):
-            return self.__center.distance(obj) - self.__radius
-
-        # Abstand von Kreis zu Kreis
-        if isinstance(obj, Circle):
-            center_dist = self.__center.distance(obj.__center)
-            return center_dist - (self.__radius + obj.__radius)
-
-    def shift(self, x_val, y_val):
-        # Kreis verschieben → Mittelpunkt verschieben
-        self.__center.shift(x_val, y_val)
-
-    def scale(self, factor):
-        # Radius vergrößern oder verkleinern
-        self.__radius *= factor
+    def __init__(self, x: float = 0, y: float = 0, radius: float = 1):
+        self._x = x
+        self._y = y
+        self._radius = radius
 
     def contains(self, p):
-        # Punkt liegt im Kreis wenn Abstand < Radius
-        return self.__center.distance(p) <= self.__radius
+        abstand = math.sqrt((p._x - self._x)**2 + (p._y - self._y)**2)
+        return abstand <= self._radius
 
     def intersect(self, c):
-        # Zwei Kreise schneiden sich, wenn Abstand der Mittelpunkte <= Summe der Radien
-        center_dist = self.__center.distance(c.__center)
-        return center_dist <= (self.__radius + c.__radius)
+        abstand = math.sqrt((c._x - self._x)**2 + (c._y - self._y)**2)
+        return abstand <= (self._radius + c._radius)
+
+    def distance(self, obj):
+        dx = obj._x - self._x
+        dy = obj._y - self._y
+        abim = math.sqrt(dx*dx + dy*dy)
+
+        if type(obj) == Punkt:
+            if abim <= self._radius:
+                return 0
+            return abs(abim - self._radius)
+
+        if type(obj) == Circle:
+            if abim <= self._radius + obj._radius:
+                return 0
+            return abs(abim - (self._radius + obj._radius))
+
+    def shift(self, x_val, y_val):
+        self._x += x_val
+        self._y += y_val
+
+    def scale(self, factor):
+        self._radius *= factor
 
     def show(self):
-        return f"Circle(center={self.__center.show()}, radius={self.__radius})"
+        return f"Kreis: Mittelpunkt({self._x}, {self._y}), Radius: {self._radius}"
 
 
-print("--- TESTS ---\n")
+p1 = Punkt()
+print(p1.show())
 
-# Punkt 1 (Standardwerte)
-p1 = Point()
-print("Punkt 1:", p1.show())
+p1.shift(1,1)
+print(p1.show())
 
-# Punkt 1 verschieben
-p1.shift(2, 3)
-print("Punkt 1 verschoben:", p1.show())
+p2 = Punkt(2,3)
+print(p2.show())
+print(p1.distance(p2))
 
-# Punkt 2 mit beliebigen Koordinaten
-p2 = Point(5, 7)
-print("Punkt 2:", p2.show())
+k1 = Circle()
+print(k1.show())
 
-# Abstand Punkt 1 – Punkt 2
-print("Abstand P1 -> P2:", p1.distance(p2))
+k1.shift(1,1)
+print(k1.show())
 
-# Kreis 1 (Standardwerte)
-c1 = Circle()
-print("\nKreis 1:", c1.show())
+k1.scale(0.5)
+print(k1.show())
+print(k1.contains(p1))
 
-# Kreis 1 verschieben
-c1.shift(2, 3)
-print("Kreis 1 verschoben:", c1.show())
-
-# Kreis 1 skalieren
-c1.scale(2)
-print("Kreis 1 skaliert:", c1.show())
-
-# Prüfen, ob Punkt 1 im Kreis 1 liegt
-print("Punkt 1 in Kreis 1?", c1.contains(p1))
-
-# Kreis 2 mit beliebigen Koordinaten
-c2 = Circle(10, 3, 2)
-print("\nKreis 2:", c2.show())
-
-# Prüfen: Punkt 1 in Kreis 2?
-print("Punkt 1 in Kreis 2?", c2.contains(p1))
-
-# Prüfen: schneiden sich Kreis 1 und Kreis 2?
-print("Schneiden sich Kreis 1 und Kreis 2?", c1.intersect(c2))
+k2 = Circle(1,2,0.8)
+print(k2.show())
+print(k2.contains(p1))
+print(k2.intersect(k1))
