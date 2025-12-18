@@ -1,18 +1,18 @@
 # 7.2 Kontaktbuch mit Dateispeicherung
+# Einfache Version für Beginner
 
 class Person:
     def __init__(self, vorname, nachname, jahr, monat, tag, telefon, email):
         self.vorname = vorname
         self.nachname = nachname
-        self.__jahr = jahr
-        self.__monat = monat
-        self.__tag = tag
+        self.jahr = jahr
+        self.monat = monat
+        self.tag = tag
         self.telefon = telefon
         self.email = email
-    def get_geburtsdatum(self):
-        return self.__jahr, self.__monat, self.__tag
 
 
+# Globale Variable für alle Kontakte
 kontakte = {}
 datei_name = "kontakte.txt"
 
@@ -43,10 +43,14 @@ def kontakte_laden():
                             person = Person(vorname, nachname, jahr, monat, tag, telefon, email)
                             key = f"{vorname} {nachname}"
                             kontakte[key] = person
+                        else:
+                            print(f"Fehler: Datensatz hat {len(daten)} statt 7 Teile")
                     except:
                         print(f"Fehler: Kann diese Zeile nicht lesen: {zeile}")
 
         print("Kontakte geladen!")
+    except FileNotFoundError:
+        print("Keine Kontakte-Datei gefunden. Beginne mit leeren Kontakten.")
     except:
         print("Ein Fehler ist beim Laden aufgetreten.")
 
@@ -69,9 +73,16 @@ def kontakt_hinzufuegen():
     print("\n--- Neuer Kontakt ---")
     vorname = input("Vorname: ")
     nachname = input("Nachname: ")
-    jahr = int(input("Geburtsjahr: "))
-    monat = int(input("Geburtsmonat (Zahl 1-12): "))
-    tag = int(input("Geburtstag: "))
+
+    # Versuche, Zahlen einzulesen
+    try:
+        jahr = int(input("Geburtsjahr: "))
+        monat = int(input("Geburtsmonat (Zahl 1-12): "))
+        tag = int(input("Geburtstag: "))
+    except:
+        print("Fehler: Jahr, Monat und Tag müssen Zahlen sein!")
+        return
+
     telefon = input("Telefon: ")
     email = input("Email: ")
 
@@ -122,7 +133,7 @@ def kontakt_suchen():
         print("Keine Kontakte vorhanden.")
         return
 
-
+    print("\n--- Kontakt suchen ---")
     print("Verfügbare Kontakte:")
     for key in kontakte.keys():
         print(f"- {key}")
@@ -141,13 +152,16 @@ def kontakt_suchen():
 
 # 7. HAUPTMENÜ
 def hauptmenu():
+    print("\n" + "=" * 40)
     print("KONTAKTBUCH")
+    print("=" * 40)
     print("(n) Neuer Kontakt")
     print("(d) Kontakt löschen")
     print("(a) Alle Kontakte anzeigen")
     print("(s) Kontakt suchen")
     print("(q) Beenden")
     print("=" * 40)
+
     return input("Deine Wahl: ").lower()
 
 
@@ -175,4 +189,4 @@ while True:
         print("Auf Wiedersehen!")
         break
     else:
-        print("Ungültige Eingabe!")
+        print("Ungültige Eingabe! Bitte n, d, a, s oder q eingeben.")
