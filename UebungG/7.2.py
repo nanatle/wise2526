@@ -43,8 +43,6 @@ def kontakte_laden():
                             person = Person(vorname, nachname, jahr, monat, tag, telefon, email)
                             key = f"{vorname} {nachname}"
                             kontakte[key] = person
-                    except:
-                        print(f"Fehler: Kann diese Zeile nicht lesen: {zeile}")
 
         print("Kontakte geladen!")
     except:

@@ -1,5 +1,4 @@
 # 7.2 Kontaktbuch mit Dateispeicherung
-# Einfache Version für Beginner
 
 class Person:
     def __init__(self, vorname, nachname, jahr, monat, tag, telefon, email):
@@ -26,10 +25,8 @@ def kontakte_laden():
                 zeile = zeile.strip()  # Leerzeichen entfernen
                 if zeile:  # Nur wenn Zeile nicht leer ist
                     try:
-                        # Teile die Zeile an Kommas
                         daten = zeile.split(",")
 
-                        # Stelle sicher, dass alle 7 Teile da sind
                         if len(daten) == 7:
                             vorname = daten[0]
                             nachname = daten[1]
@@ -39,12 +36,10 @@ def kontakte_laden():
                             telefon = daten[5]
                             email = daten[6]
 
-                            # Erstelle Person-Objekt
                             person = Person(vorname, nachname, jahr, monat, tag, telefon, email)
                             key = f"{vorname} {nachname}"
                             kontakte[key] = person
-                        else:
-                            print(f"Fehler: Datensatz hat {len(daten)} statt 7 Teile")
+
                     except:
                         print(f"Fehler: Kann diese Zeile nicht lesen: {zeile}")
 
@@ -75,13 +70,9 @@ def kontakt_hinzufuegen():
     nachname = input("Nachname: ")
 
     # Versuche, Zahlen einzulesen
-    try:
-        jahr = int(input("Geburtsjahr: "))
-        monat = int(input("Geburtsmonat (Zahl 1-12): "))
-        tag = int(input("Geburtstag: "))
-    except:
-        print("Fehler: Jahr, Monat und Tag müssen Zahlen sein!")
-        return
+    jahr = int(input("Geburtsjahr: "))
+    monat = int(input("Geburtsmonat (Zahl 1-12): "))
+    tag = int(input("Geburtstag: "))
 
     telefon = input("Telefon: ")
     email = input("Email: ")
@@ -95,9 +86,6 @@ def kontakt_hinzufuegen():
 
 # 4. KONTAKT LÖSCHEN
 def kontakt_loeschen():
-    if not kontakte:
-        print("Es gibt keine Kontakte zum Löschen.")
-        return
 
     print("\n--- Kontakt löschen ---")
     print("Verfügbare Kontakte:")
@@ -115,9 +103,7 @@ def kontakt_loeschen():
 
 # 5. ALLE KONTAKTE ANZEIGEN
 def kontakte_anzeigen():
-    if not kontakte:
-        print("Keine Kontakte vorhanden.")
-        return
+
 
     print("\n--- Alle Kontakte ---")
     for key, person in kontakte.items():
@@ -129,9 +115,6 @@ def kontakte_anzeigen():
 
 # 6. KONTAKT SUCHEN
 def kontakt_suchen():
-    if not kontakte:
-        print("Keine Kontakte vorhanden.")
-        return
 
     print("\n--- Kontakt suchen ---")
     print("Verfügbare Kontakte:")
@@ -154,10 +137,9 @@ def kontakt_suchen():
 def hauptmenu():
     print("\n" + "=" * 40)
     print("KONTAKTBUCH")
-    print("=" * 40)
     print("(n) Neuer Kontakt")
     print("(d) Kontakt löschen")
-    print("(a) Alle Kontakte anzeigen")
+    print("(l) Alle Kontakte anzeigen")
     print("(s) Kontakt suchen")
     print("(q) Beenden")
     print("=" * 40)
@@ -166,7 +148,6 @@ def hauptmenu():
 
 
 # HAUPTPROGRAMM
-print("Willkommen im Kontaktbuch!")
 print("Kontakte werden geladen...")
 kontakte_laden()  # Kontakte beim Start laden
 
@@ -178,7 +159,7 @@ while True:
         kontakt_hinzufuegen()
     elif wahl == "d":
         kontakt_loeschen()
-    elif wahl == "a":
+    elif wahl == "l":
         kontakte_anzeigen()
     elif wahl == "s":
         kontakt_suchen()
@@ -189,4 +170,4 @@ while True:
         print("Auf Wiedersehen!")
         break
     else:
-        print("Ungültige Eingabe! Bitte n, d, a, s oder q eingeben.")
+        print("Ungültige Eingabe!")
