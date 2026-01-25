@@ -9,3 +9,10 @@ def d1() -> dict[int, int]:
     list1 = l1()
     list2 = l2()
     return dict(zip(list1, list2))
+
+l1()
+#print(l1())
+l2()
+#print(l2())
+d1()
+#print(d1())

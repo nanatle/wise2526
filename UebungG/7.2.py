@@ -39,7 +39,6 @@ def kontakte_laden():
                             telefon = daten[5]
                             email = daten[6]
 
-                            # Erstelle Person-Objekt
                             person = Person(vorname, nachname, jahr, monat, tag, telefon, email)
                             key = f"{vorname} {nachname}"
                             kontakte[key] = person
@@ -62,7 +61,6 @@ def kontakte_speichern():
         print("Fehler beim Speichern!")
 
 
-# 3. NEUEN KONTAKT HINZUFÜGEN
 def kontakt_hinzufuegen():
     print("\n--- Neuer Kontakt ---")
     vorname = input("Vorname: ")
@@ -80,7 +78,6 @@ def kontakt_hinzufuegen():
     print(f"Kontakt '{key}' wurde hinzugefügt!")
 
 
-# 4. KONTAKT LÖSCHEN
 def kontakt_loeschen():
     if not kontakte:
         print("Es gibt keine Kontakte zum Löschen.")
@@ -113,13 +110,10 @@ def kontakte_anzeigen():
         print(f"  Telefon: {person.telefon}")
         print(f"  Email: {person.email}")
 
-
-# 6. KONTAKT SUCHEN
 def kontakt_suchen():
     if not kontakte:
         print("Keine Kontakte vorhanden.")
         return
-
 
     print("Verfügbare Kontakte:")
     for key in kontakte.keys():
@@ -136,8 +130,6 @@ def kontakt_suchen():
     else:
         print(f"Kontakt '{name}' nicht gefunden!")
 
-
-# 7. HAUPTMENÜ
 def hauptmenu():
     print("KONTAKTBUCH")
     print("(n) Neuer Kontakt")
@@ -149,12 +141,10 @@ def hauptmenu():
     return input("Deine Wahl: ").lower()
 
 
-# HAUPTPROGRAMM
 print("Willkommen im Kontaktbuch!")
 print("Kontakte werden geladen...")
-kontakte_laden()  # Kontakte beim Start laden
+kontakte_laden()
 
-# Hauptschleife
 while True:
     wahl = hauptmenu()
 
@@ -167,10 +157,7 @@ while True:
     elif wahl == "s":
         kontakt_suchen()
     elif wahl == "q":
-        # Kontakte speichern und Programm beenden
-        print("Speichere Kontakte...")
         kontakte_speichern()
-        print("Auf Wiedersehen!")
         break
     else:
         print("Ungültige Eingabe!")

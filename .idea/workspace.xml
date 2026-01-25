@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf556dda-68c0-4bfd-a8cb-a13ca8af9303" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UebungJ/9.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wise2526.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wise2526.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Probeklausur-wise2526/kollektion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Probeklausur-wise2526/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Probeklausur-wise2526/rekursion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Probeklausur-wise2526/vererbung.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/6.1_9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/Eintraege.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/UE10_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/UE10_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/UE7_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/UE9_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/UE9_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UebungI/UE9_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2-5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2_61.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE2_62.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE3-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE3-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE3-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE4-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE4-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wiederholung/UE4-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/aufgabe_6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/binomialkoeffizient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/dict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maths/funktion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UebungG/7.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungG/7.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Probeklausur/kollektion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Probeklausur/kollektion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Probeklausur/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Probeklausur/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UebungG/7.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungG/7.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UebungG/drafts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UebungG/kontakte.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UebungG/kontakte.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UebungG/korr.py" beforeDir="false" afterPath="$PROJECT_DIR$/UebungG/korr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UebungI/9.1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/Hanoi_Rekursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/maths/Hanoi_Rekursion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +73,47 @@
     "Python.3.2.executor": "Run",
     "Python.5.1.executor": "Run",
     "Python.6.1.executor": "Run",
+    "Python.6.1_9.executor": "Run",
     "Python.6.2.executor": "Run",
     "Python.7.1.executor": "Run",
     "Python.7.2..executor": "Run",
     "Python.7.2.executor": "Run",
     "Python.9.1.executor": "Run",
+    "Python.Hanoi_Rekursion.executor": "Run",
+    "Python.RECURSION.executor": "Run",
+    "Python.UE10_2.executor": "Run",
+    "Python.UE2-1.executor": "Run",
+    "Python.UE2-2.executor": "Run",
+    "Python.UE2-3.executor": "Run",
+    "Python.UE2-4.executor": "Run",
+    "Python.UE2-5.executor": "Run",
+    "Python.UE2_6.executor": "Run",
+    "Python.UE2_62.executor": "Run",
+    "Python.UE3-1.executor": "Run",
+    "Python.UE3-2.executor": "Run",
+    "Python.UE3-3.executor": "Run",
+    "Python.UE4-1.executor": "Run",
+    "Python.UE7_2.executor": "Run",
+    "Python.UE9_1.executor": "Run",
+    "Python.binomialkoeffizient.executor": "Run",
+    "Python.dict.executor": "Run",
     "Python.drafts.executor": "Run",
+    "Python.factorial.executor": "Debug",
+    "Python.fibonacci_sequence.executor": "Run",
+    "Python.funktion.executor": "Run",
+    "Python.kollektion.executor": "Run",
     "Python.korr.executor": "Run",
     "Python.m.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.parser.executor": "Run",
+    "Python.probe.executor": "Run",
+    "Python.recursion_factorial.executor": "Run",
+    "Python.rekursion.executor": "Run",
+    "Python.vererbung.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "aufgaben",
+    "last_opened_file_path": "/Users/thuha/Documents/GitHub/wise2526/UebungI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,6 +124,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/UebungI" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/UebungF" />
       <recent name="$PROJECT_DIR$/UebungG" />
@@ -121,6 +180,11 @@
       <workItem from="1765392719398" duration="9284000" />
       <workItem from="1766013344681" duration="8408000" />
       <workItem from="1768465264974" duration="2699000" />
+      <workItem from="1768772991423" duration="13505000" />
+      <workItem from="1768949264572" duration="13898000" />
+      <workItem from="1769008283788" duration="7519000" />
+      <workItem from="1769035604289" duration="2224000" />
+      <workItem from="1769273299596" duration="18053000" />
     </task>
     <servers />
   </component>
@@ -129,15 +193,44 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wise2526$7_1.coverage" NAME="7.1 Coverage Results" MODIFIED="1766047358764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
-    <SUITE FILE_PATH="coverage/wise2526$3_2.coverage" NAME="3.2 Coverage Results" MODIFIED="1768467151204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wise2526$dict.coverage" NAME="dict Coverage Results" MODIFIED="1768997958451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$RECURSION.coverage" NAME="RECURSION Coverage Results" MODIFIED="1768856915796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$korr.coverage" NAME="korr Coverage Results" MODIFIED="1769034270307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
+    <SUITE FILE_PATH="coverage/wise2526$fibonacci_sequence.coverage" NAME="fibonacci_sequence Coverage Results" MODIFIED="1768845990144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$Hanoi_Rekursion.coverage" NAME="Hanoi_Rekursion Coverage Results" MODIFIED="1768997089416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$UE3_3.coverage" NAME="UE3-3 Coverage Results" MODIFIED="1769289841048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_5.coverage" NAME="UE2-5 Coverage Results" MODIFIED="1769274557267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$UE4_1.coverage" NAME="UE4-1 Coverage Results" MODIFIED="1769291568499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$6_1_9.coverage" NAME="6.1_9 Coverage Results" MODIFIED="1769013563397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungI" />
+    <SUITE FILE_PATH="coverage/wise2526$rekursion.coverage" NAME="rekursion Coverage Results" MODIFIED="1769300144973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Probeklausur-wise2526" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_2.coverage" NAME="UE2-2 Coverage Results" MODIFIED="1769005076973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$factorial.coverage" NAME="factorial Coverage Results" MODIFIED="1768857844806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_1.coverage" NAME="UE2-1 Coverage Results" MODIFIED="1769004328350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_4.coverage" NAME="UE2-4 Coverage Results" MODIFIED="1769007666440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$binomialkoeffizient.coverage" NAME="binomialkoeffizient Coverage Results" MODIFIED="1769002720816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
     <SUITE FILE_PATH="coverage/wise2526$9_1.coverage" NAME="9.1 Coverage Results" MODIFIED="1768467276144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungJ" />
-    <SUITE FILE_PATH="coverage/wise2526$korr.coverage" NAME="korr Coverage Results" MODIFIED="1766044215438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
-    <SUITE FILE_PATH="coverage/wise2526$5_1.coverage" NAME="5.1 Coverage Results" MODIFIED="1764196507344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungE" />
+    <SUITE FILE_PATH="coverage/wise2526$UE9_1.coverage" NAME="UE9_1 Coverage Results" MODIFIED="1769008450280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungI" />
+    <SUITE FILE_PATH="coverage/wise2526$3_2.coverage" NAME="3.2 Coverage Results" MODIFIED="1769274095414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wise2526$UE3_2.coverage" NAME="UE3-2 Coverage Results" MODIFIED="1769278481136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$funktion.coverage" NAME="funktion Coverage Results" MODIFIED="1768996195544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
     <SUITE FILE_PATH="coverage/wise2526$7_2_.coverage" NAME="7.2. Coverage Results" MODIFIED="1766013688152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
-    <SUITE FILE_PATH="coverage/wise2526$drafts.coverage" NAME="drafts Coverage Results" MODIFIED="1766020652224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
-    <SUITE FILE_PATH="coverage/wise2526$7_2.coverage" NAME="7.2 Coverage Results" MODIFIED="1766046036792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
+    <SUITE FILE_PATH="coverage/wise2526$7_2.coverage" NAME="7.2 Coverage Results" MODIFIED="1769033993353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
+    <SUITE FILE_PATH="coverage/wise2526$UE7_2.coverage" NAME="UE7_2 Coverage Results" MODIFIED="1769034351794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungI" />
+    <SUITE FILE_PATH="coverage/wise2526$kollektion.coverage" NAME="kollektion Coverage Results" MODIFIED="1769301618176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Probeklausur-wise2526" />
+    <SUITE FILE_PATH="coverage/wise2526$vererbung.coverage" NAME="vererbung Coverage Results" MODIFIED="1769300167812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Probeklausur-wise2526" />
     <SUITE FILE_PATH="coverage/wise2526$m.coverage" NAME="m Coverage Results" MODIFIED="1766019996388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
     <SUITE FILE_PATH="coverage/wise2526$6_1.coverage" NAME="6.1 Coverage Results" MODIFIED="1764231261099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungF" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_62.coverage" NAME="UE2_62 Coverage Results" MODIFIED="1769276601980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$parser.coverage" NAME="parser Coverage Results" MODIFIED="1769291947303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Probeklausur-wise2526" />
+    <SUITE FILE_PATH="coverage/wise2526$probe.coverage" NAME="probe Coverage Results" MODIFIED="1768844681422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$recursion_factorial.coverage" NAME="recursion_factorial Coverage Results" MODIFIED="1768857378083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maths" />
+    <SUITE FILE_PATH="coverage/wise2526$UE10_2.coverage" NAME="UE10_2 Coverage Results" MODIFIED="1769036641529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungI" />
+    <SUITE FILE_PATH="coverage/wise2526$drafts.coverage" NAME="drafts Coverage Results" MODIFIED="1766020652224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungG" />
+    <SUITE FILE_PATH="coverage/wise2526$5_1.coverage" NAME="5.1 Coverage Results" MODIFIED="1764196507344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungE" />
     <SUITE FILE_PATH="coverage/wise2526$6_2.coverage" NAME="6.2 Coverage Results" MODIFIED="1765405115589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UebungF" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_6.coverage" NAME="UE2_6 Coverage Results" MODIFIED="1769276074586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$UE2_3.coverage" NAME="UE2-3 Coverage Results" MODIFIED="1769005725651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$UE3_1.coverage" NAME="UE3-1 Coverage Results" MODIFIED="1769277758351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Wiederholung" />
+    <SUITE FILE_PATH="coverage/wise2526$main.coverage" NAME="main Coverage Results" MODIFIED="1768863410743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Probeklausur" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 def hanoi(
         n: "Anzahl regelkonform zum Turm gestapelter Scheiben",
-        start: "Bezeichnung für die Ausgangsfunktion des Turms",
+        start: "Bezeichnung für die Ausgangsposition des Turms",
         ziel: "Bezeichnung für die gewünschte Endposition des Turms",
         frei: "Bezeichnung für die freie Position zur Bewegung des Scheiben"):
 

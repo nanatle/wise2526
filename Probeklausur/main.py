@@ -3,9 +3,10 @@ import rekursion
 import parser
 
 def menue():
+    print("\n")
     print("Welcome to Probeklausur")
     print("Hauptmenü")
-    print("\n")
+
     print("1. Kollektion/Tupel")
     print("2. Rekursion")
     print("3. Parser")
@@ -15,26 +16,26 @@ def menue():
 def main():
     while True:
         menue()
-        try:
-            choice = int(input("Bitte wählen Sie eine Option (1-4): "))
+        choice = int(input("Bitte wählen Sie eine Option (1-4): "))
 
-            if choice == 1:
-                print("Kollektion/Tupel")
-                kollektion.run_all()
+        if choice == 1:
+            print("Kollektion/Tupel:")
+            
 
-            elif choice == 2:
-                print("Rekursion")
-                rekursion.run_all()
 
-            elif choice == 3:
-                print("Parser")
-                parser.run_all()
+        elif choice == 2:
+            print("Rekursion")
+            rekursion.run_all()
 
-            elif choice == 4:
-                print("Programm beenden")
+        elif choice == 3:
+            print("Parser")
+            parser.run_all()
 
-            else:
-                print("Ungültige Eingabe: {choice}.")
+        elif choice == 4:
+            print("Programm beenden")
 
-        except Exception as e:
-            print("Fehler aufgetrete: {e}.")
+        else:
+            print("Ungültige Eingabe: {choice}.")
+
+if (__name__ == "__main__"):
+    print(main())
