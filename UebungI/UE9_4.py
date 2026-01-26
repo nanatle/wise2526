@@ -1,20 +1,22 @@
 from datetime import date
 
 class Person:
-
-    def __init__(self, vorname: str, nachname: str, tag: str, monat: str, jahr: str, telefon: str, email: str):
+    def __init__(
+        self,
+        vorname: str,
+        nachname: str,
+        geburtsdatum: date,
+        telefon: str,
+        email: str
+    ):
         self.vorname = vorname
         self.nachname = nachname
-        self.__jahr = jahr
-        self.__monat = monat
-        self.__tag = tag
+        self.geburtsdatum = geburtsdatum
         self.telefon = telefon
         self.email = email
 
-
     def get_geburtsdatum(self) -> date:
-        return date(self.__jahr, self.__monat, self.__tag)
-
+        return self.geburtsdatum
 
     def __str__(self) -> str:
         return (

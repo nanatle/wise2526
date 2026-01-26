@@ -5,6 +5,7 @@ def countIn(text: str, zeichen: str) -> int:
 
 print(countIn("Nana Tle", "e"))
 
+
 #1.2 Convert input
 
 def convertInput(input_number: str) -> float:

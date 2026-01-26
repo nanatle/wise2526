@@ -3,9 +3,6 @@ from datetime import date
 
 geburtstage: list[Person] = []
 
-
-# ===================== DATEI LADEN =====================
-
 def laden():
     try:
         with open("Eintraege.txt", "r") as fin:
@@ -16,13 +13,13 @@ def laden():
                     if len(daten) != 7:
                         raise ValueError("Falsche Anzahl an Feldern")
 
-                    vorname = daten[0]
-                    nachname = daten[1]
+                    vorname = str(daten[0])
+                    nachname = str(daten[1])
                     jahr = int(daten[2])
                     monat = int(daten[3])
                     tag = int(daten[4])
-                    telefon = daten[5]
-                    email = daten[6]
+                    telefon = str(daten[5])
+                    email = str(daten[6])
 
                     geburtsdatum = date(jahr, monat, tag)
                     geburtstage.append(
@@ -36,20 +33,17 @@ def laden():
         print("Datei 'Eintraege.txt' existiert noch nicht.")
 
 
-# ===================== DATEI SPEICHERN =====================
 
 def speichern():
-    with open("Eintraege.txt", "w") as fout:
+    with open("Eintraege.txt", "w") as fin:
         for p in geburtstage:
             gd = p.get_geburtsdatum()
-            fout.write(
+            fin.write(
                 f"{p.vorname},{p.nachname},"
                 f"{gd.year},{gd.month},{gd.day},"
                 f"{p.telefon},{p.email}\n"
             )
 
-
-# ===================== MENÜ =====================
 
 def print_menu():
     print(
@@ -58,26 +52,22 @@ def print_menu():
         "\n(s) nach einer Person suchen"
         "\n(l) alle Einträge auflisten"
         "\n(b) Geburtstags-Countdown"
-        "\n(q) Kalenderprogramm beenden\n"
-    )
+        "\n(q) Kalenderprogramm beenden\n" )
 
 
-# ===================== FUNKTIONEN =====================
 
 def n():
     try:
-        vorname = input("Vorname: ")
-        nachname = input("Nachname: ")
+        vorname = str(input("Vorname: "))
+        nachname = str(input("Nachname: "))
         jahr = int(input("Geburtsjahr: "))
         monat = int(input("Geburtsmonat: "))
         tag = int(input("Geburtstag: "))
-        telefon = input("Telefon: ")
-        email = input("Email: ")
+        telefon = str(input("Telefon: "))
+        email = str(input("Email: "))
 
         geburtsdatum = date(jahr, monat, tag)
-        geburtstage.append(
-            Person(vorname, nachname, geburtsdatum, telefon, email)
-        )
+        geburtstage.append(Person(vorname, nachname, geburtsdatum, telefon, email))
         speichern()
 
     except ValueError as e:
@@ -150,8 +140,6 @@ def b():
         else:
             print(f"Noch {tage} Tage bis {p.vorname} {p.nachname}s Geburtstag.")
 
-
-# ===================== PROGRAMMSTART =====================
 
 laden()
 

@@ -8,7 +8,7 @@ def recursive_solution(x: int, schritt: int = 0) -> int:
 
     return x**2 + recursive_solution(x - 1, schritt + 1)
 
-print("Ergebnis 1: ",recursive_solution(3, schritt = 1))
+print("Ergebnis 1 (Rekursion): ",recursive_solution(3, schritt = 1))
 
 
 
@@ -23,7 +23,7 @@ def iterative_solution(x: int) -> int:
 
     return f
 
-print("-------\nErgebnis 2: ",iterative_solution(3))
+print("-------\nErgebnis 2 (Iteration): ",iterative_solution(3))
 
 
 
@@ -35,5 +35,5 @@ def second_recursion(n: float) -> float:
 
     return second_recursion(n - 1) + 2*second_recursion(n - 2)
 
-print("-------\nErgebnis 3: ",second_recursion(3))
+print("-------\nErgebnis 3 (doppelte Rekursion): ",second_recursion(3))
 
