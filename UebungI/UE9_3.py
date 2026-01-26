@@ -3,12 +3,12 @@ from math import sqrt
 
 class Polygon(Figur):
     def __init__(self, n: int, collection: list[int]):
-        super().__init__()
+        super().__init__("Polygon")
         self.n = n
         self._collection = collection
 
     def show(self):
-        return f"{self.name}(Anzahl Seiten: {self._n}, die Seitenlänge: {self._collection})"
+        return f"{self.name}(Anzahl Seiten: {self.n}, die Seitenlänge: {self._collection})"
 
     def scale(self, faktor:float):
         for i in range(len(self._collection)):

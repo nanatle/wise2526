@@ -1,15 +1,15 @@
 from UE9_4 import Person
 from datetime import date
 
-geburtstage = []
+geburtstage: list[Person] = []
+
+
+# ===================== DATEI LADEN =====================
 
 def laden():
-
     try:
         with open("Eintraege.txt", "r") as fin:
-            zeilennummer = 0
-            for line in fin:
-                zeilennummer += 1
+            for zeilennummer, line in enumerate(fin, start=1):
                 try:
                     daten = line.strip().split(",")
 
@@ -24,25 +24,32 @@ def laden():
                     telefon = daten[5]
                     email = daten[6]
 
-                    p = Person(vorname, nachname, jahr, monat, tag, telefon, email)
-                    geburtstage.append(p)
+                    geburtsdatum = date(jahr, monat, tag)
+                    geburtstage.append(
+                        Person(vorname, nachname, geburtsdatum, telefon, email)
+                    )
 
                 except Exception as e:
-                    print(f"Fehler in Zeile {zeilennummer}: {line.strip()}")
-                    print(f"→ Datensatz übersprungen ({e})")
+                    print(f"Fehler in Zeile {zeilennummer}: {e}")
 
     except FileNotFoundError:
         print("Datei 'Eintraege.txt' existiert noch nicht.")
 
 
+# ===================== DATEI SPEICHERN =====================
 
 def speichern():
     with open("Eintraege.txt", "w") as fout:
         for p in geburtstage:
-            jahr, monat, tag = p.get_geburtsdatum()
-            fout.write(f"{p.vorname},{p.nachname},{jahr},{monat},{tag},{p.telefon},{p.email}\n")
+            gd = p.get_geburtsdatum()
+            fout.write(
+                f"{p.vorname},{p.nachname},"
+                f"{gd.year},{gd.month},{gd.day},"
+                f"{p.telefon},{p.email}\n"
+            )
 
 
+# ===================== MENÜ =====================
 
 def print_menu():
     print(
@@ -50,10 +57,12 @@ def print_menu():
         "\n(d) einen Eintrag löschen"
         "\n(s) nach einer Person suchen"
         "\n(l) alle Einträge auflisten"
-        "\n(b) Geburtstagen Countdown"
+        "\n(b) Geburtstags-Countdown"
         "\n(q) Kalenderprogramm beenden\n"
-
     )
+
+
+# ===================== FUNKTIONEN =====================
 
 def n():
     try:
@@ -65,11 +74,14 @@ def n():
         telefon = input("Telefon: ")
         email = input("Email: ")
 
-        geburtstage.append(Person(vorname, nachname, jahr, monat, tag, telefon, email))
+        geburtsdatum = date(jahr, monat, tag)
+        geburtstage.append(
+            Person(vorname, nachname, geburtsdatum, telefon, email)
+        )
         speichern()
 
     except ValueError as e:
-        print("Fehler beim Anlegen des Eintrags:", e)
+        print("Fehler beim Anlegen:", e)
 
 
 def d():
@@ -81,7 +93,7 @@ def d():
         print(i, ".", p.vorname, p.nachname)
 
     try:
-        index = int(input("Welchen Kontakt wollen Sie löschen?: ")) - 1
+        index = int(input("Welchen Kontakt löschen?: ")) - 1
         if 0 <= index < len(geburtstage):
             geburtstage.pop(index)
             speichern()
@@ -97,8 +109,7 @@ def l():
         return
 
     for p in geburtstage:
-        print(f"{p.vorname} {p.nachname}, Tel: {p.telefon}, "
-              f"Email: {p.email}, Geb.: {p.get_geburtsdatum()}")
+        print(p)
 
 
 def s():
@@ -107,25 +118,40 @@ def s():
 
     for p in geburtstage:
         if p.nachname.lower() == name:
-            print(f"{p.vorname} {p.nachname}, Tel: {p.telefon}, "
-                  f"Email: {p.email}, Geb.: {p.get_geburtsdatum()}")
+            print(p)
             gefunden = True
 
     if not gefunden:
         print("Keine passende Person gefunden.")
 
+
 def b():
+    if not geburtstage:
+        print("Keine Einträge vorhanden.")
+        return
 
     heute = date.today()
+
     for p in geburtstage:
-        geb = date(heute.year, p.get_monat(), p.get_tag())
-        if geb < heute:
-            geb = date(heute.year + 1, p.get_monat(), p.get_tag())
-        noch = (geb - heute).days
-        if noch == 0:
-            print(f"Heute ist {p.vorname} {p.nachname}s Geburtstag! ")
+        gd = p.get_geburtsdatum()
+
+        try:
+            naechster = date(heute.year, gd.month, gd.day)
+        except ValueError:
+            naechster = date(heute.year, 3, 1)
+
+        if naechster < heute:
+            naechster = date(heute.year + 1, naechster.month, naechster.day)
+
+        tage = (naechster - heute).days
+
+        if tage == 0:
+            print(f"Heute ist {p.vorname} {p.nachname}s Geburtstag!")
         else:
-            print(f"Noch {noch} Tage bis {p.vorname} {p.nachname}s Geburtstag.")
+            print(f"Noch {tage} Tage bis {p.vorname} {p.nachname}s Geburtstag.")
+
+
+# ===================== PROGRAMMSTART =====================
 
 laden()
 
@@ -144,6 +170,7 @@ while True:
     elif wahl == "b":
         b()
     elif wahl == "q":
+        print("Programm beendet.")
         break
     else:
-        print("Ungültige Eingabe")
+        print("Ungültige Eingabe!")
