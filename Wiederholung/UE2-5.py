@@ -1,5 +1,4 @@
 text: str = """Ein kleiner Mann mit einem Spitzbart wartet im Vorzimmer einer Künstleragentur. Endlich wird er beim Direktor vorgelassen. Dieser thront in seinem Büro und raucht eine Zigarre.
-
 Direktor: Was kann ich für Sie tun?
 Kleiner Mann: Ich möchte mich gerne um einen Job bewerben.
 Direktor: Ja, was können Sie denn?

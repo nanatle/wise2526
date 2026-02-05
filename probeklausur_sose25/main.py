@@ -3,7 +3,6 @@ from rekursion import recursive_solution, iterative_solution, second_recursion
 from parser import parse_weight, normalize, add
 
 
-
 def menue():
     print("\n")
     print("***Welcome to Probeklausur***")
