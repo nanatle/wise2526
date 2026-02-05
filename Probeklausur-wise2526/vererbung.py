@@ -1,15 +1,15 @@
 #4.1 Block--------------
 
 class Block:
-    def __init__(self):
-        self.a = 2.0
-        self.b = 1.0
-        self.c = 3.2
+    def __init__(self, a: float, b: float, c: float):
+        self.a = a
+        self.b = b
+        self.c = c
 
     def isCorrect(self) -> bool:
         return self.a > 0 and self.b > 0 and self.c > 0
 
-b1 = Block()
+b1 = Block(2.2, 1.2, 3.2)
 b1.isCorrect()
 print("Sind die Kantenlängen a, b und c positiv? -", b1.isCorrect())
 
@@ -17,7 +17,7 @@ print("Sind die Kantenlängen a, b und c positiv? -", b1.isCorrect())
 
 class Quader(Block):
     def __init__(self):
-        super().__init__()
+        super().__init__(2.0, 1.0, 3.0)
 
     def flaeche(self) -> float:
         oberflaeche = 2 * (self.a * self.b + self.a * self.c + self.a * self.b)

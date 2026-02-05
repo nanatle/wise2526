@@ -10,7 +10,7 @@ print("Resultat 1: ", l1())
 #2.2
 
 def l2():
-    res2 = [x**2 + 2 for x in range(-11, 12)]
+    res2 = [x**2 + 2 for x in range(-10, 12)]
     return res2
 
 print("Resultat 2: ", l2())
@@ -28,15 +28,25 @@ print("Dictionary: ", d1())
 import matplotlib.pyplot as plt
 import numpy as np
 
-x_min = -7000
-x_max = 13000
-step = 500
-xdata = np.arange(x_min, x_max, step)
-ydata = (xdata//1000)**2
+def plot_list(l1_as_x: bool):
+    x_data = np.array(l1())
+    y_data = np.array(l2())
 
+    if l1_as_x:
+        x = x_data
+        y = y_data
+        plt.xlabel("l1")
+        plt.ylabel("l2")
+        plt.title("Plot von l2 von l1")
 
-plt.plot(xdata, ydata)
-plt.title("LISTE")
-plt.xlabel("l1")
-plt.ylabel("l2")
-plt.show()
+    else:
+        x = y_data
+        y = x_data
+        plt.xlabel("l2")
+        plt.ylabel("l1")
+        plt.title("Plot von l1 gegen l2")
+
+    plt.plot(x, y, "r")
+    plt.show()
+
+plot_list(True)

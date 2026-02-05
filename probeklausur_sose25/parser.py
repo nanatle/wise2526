@@ -1,7 +1,8 @@
+
 def parse_weight(str_input: str) -> tuple[float, str]:
     str_input = str_input.strip()
 
-    for unit in ["kg", "mg", "g"]: #die längste Einheit zuerst prüfen, sonst erkennt das Programm nur "g" ung gibt Fehlermeldung
+    for unit in ["kg", "mg", "g"]: #die längste Einheit zuerst prüfen, sonst erkennt das Programm nur "g" und gibt Fehlermeldung
 
         if str_input.endswith(unit):
             zahl = str_input[:-len(unit)].strip()
@@ -53,3 +54,4 @@ def add(weight1: str, weight2: str) -> tuple[float, str]:
     w2_norm = normalize(w2, w1[1])
 
     return w1[0] + w2_norm[0], w1[1]
+

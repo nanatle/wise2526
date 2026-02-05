@@ -23,7 +23,9 @@ def a():
     print("List 2 =", l2())
     print("Dict = ", d1())
 
+
 def b():
+
     zahl = int(input("Geben Sie eine ganze Zahl ein: "))
     print("Rekursion: ", recursive_solution(zahl, 1))
     print("Iteration: ", iterative_solution(zahl))
@@ -32,6 +34,7 @@ def b():
 
 
 def c():
+
     print(parse_weight("23.5 kg"))
     print(normalize(parse_weight("23.5 kg"), "g"))
     print(add("136 g", "5.109 kg"))
