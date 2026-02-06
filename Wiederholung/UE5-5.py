@@ -1,30 +1,49 @@
-#Geburtstagskalender v2
+#Geburtstagskalender v3
 
-print("*** Kalendermenü ***")
+def menue():
+    print("\n*** Kalendermenü ***")
 
-print(" (n) neuen Eintrag anlegen "
+    print(" (n) neuen Eintrag anlegen "
       "\n (d) einen Eintrag löschen"
       "\n (s) nach einer Person suchen"
       "\n (l) alle Einträge auflisten"
       "\n (q) Kalenderprogramm beenden")
 
+def n():
+    pass
+
+def d():
+    pass
+
+def s():
+    pass
+
+def l():
+    pass
+
+def q():
+    print("Programm beendet.")
+
+
+
 while True:
+    menue()
     wahl = str(input("\nWahl: "))
 
     if wahl == "n":
-        pass
+        n()
 
     elif wahl == "d":
-        pass
+        d()
 
     elif wahl == "s":
-        pass
+        s()
 
     elif wahl == "l":
-        pass
+        l()
 
     elif wahl == "q":
-        print("Programm beendet.")
+        q()
         break
 
     else:
