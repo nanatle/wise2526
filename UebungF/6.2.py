@@ -41,11 +41,13 @@ def n():
 def d():
     for key, person in geburtstage.items():
         print( key )
+
     name = str(input("Welcher Kontakt möchten Sie löschen?"))
     geburtstage.pop(name)
 
 def l():
     for key, person in geburtstage.items():
+
         print(person.vorname + " " + person.nachname +
               "\n Geburtsdatum: " + str(person.get_geburtsdatum()) +
               "\n Telefon: " + person.telefon +
@@ -55,8 +57,11 @@ def l():
 def s():
     for key in geburtstage.keys():
         print(key)
-    name = str(input("Wer suchen Sie?"))
+
+    name = str(input("Wen suchen Sie?"))
+
     print(geburtstage[name].get_geburtsdatum())
+
     print(geburtstage[name].vorname + " " + geburtstage[name].nachname + ": "
                 "\n Geburtstag: " + str(geburtstage[name].get_geburtsdatum()) +
           "\n Telefon: " + geburtstage[name].telefon +

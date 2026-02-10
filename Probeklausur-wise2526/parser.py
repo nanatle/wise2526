@@ -16,6 +16,7 @@ def convertInput(input_number: str) -> float:
     while True:
         try:
             return float(input_number)
+
         except Exception as e:
             print(e)
             input_number = input("Geben Sie den richtigen Zeichen ein: ")
@@ -30,10 +31,10 @@ print("\n*****")
 
 def teileString(text: str, zeichen: str) -> list:
    if len(zeichen) != 1:
-       return 0
+       return []
 
    return text.split(zeichen)
 
 txt = "Wie heißt ein Bär, der fliegen kann? Hubschraubär"
-print(f"Original: ", txt)
-print("-> ", teileString(txt, "?"))
+print("Original: ", txt)
+print("-> ", teileString(txt, "??"))

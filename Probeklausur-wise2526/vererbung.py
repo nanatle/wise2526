@@ -13,6 +13,7 @@ b1 = Block(2.2, 1.2, 3.2)
 b1.isCorrect()
 print("Sind die Kantenlängen a, b und c positiv? -", b1.isCorrect())
 
+
 #4.2 Quader-----------
 
 class Quader(Block):
@@ -30,6 +31,7 @@ class Quader(Block):
 b2 = Quader()
 b2.flaeche()
 b2.volumen()
+
 
 #4.3 Barren--------
 class Barren(Quader):

@@ -50,3 +50,5 @@ def plot_list(l1_as_x: bool):
     plt.show()
 
 plot_list(True)
+#True: l1=x
+#False: l1=y
