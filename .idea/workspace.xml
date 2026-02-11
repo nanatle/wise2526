@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf556dda-68c0-4bfd-a8cb-a13ca8af9303" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Wiederholung/.....py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wdh_probeklausur_sose25/kollektion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wdh_probeklausur_sose25/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wdh_probeklausur_sose25/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wdh_probeklausur_sose25/rekursion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Probeklausur-wise2526/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Probeklausur-wise2526/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/probeklausur_sose25/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/probeklausur_sose25/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/probeklausur_sose25/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/probeklausur_sose25/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/probeklausur_sose25/rekursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/probeklausur_sose25/rekursion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +196,7 @@
       <workItem from="1769438135085" duration="68000" />
       <workItem from="1769674879475" duration="7132000" />
       <workItem from="1770310804018" duration="32556000" />
-      <workItem from="1770731866447" duration="12582000" />
+      <workItem from="1770731866447" duration="13983000" />
     </task>
     <servers />
   </component>
