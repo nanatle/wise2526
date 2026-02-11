@@ -1,7 +1,9 @@
 #1.1 Count in string
 
 def countIn(text: str, zeichen: str) -> int:
-    return text.count(zeichen)
+    if zeichen in text:
+        return text.count(zeichen)
+    return -1
 
 txt = "Zur Kreuzung? Gut. Durch die Tür hinaus, zur linke Reihe, jeder nur ein Kreuz."
 print(txt)

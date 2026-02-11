@@ -1,4 +1,4 @@
-from kollektion import l1, l2, d1
+from kollektion import *
 from rekursion import recursive_solution, iterative_solution, second_recursion
 from parser import parse_weight, normalize, add
 
